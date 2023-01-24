@@ -21,7 +21,7 @@ In your terminal:
 
 ``` bash
 # install the package
-composer require backpack/settings
+composer require tannhatcms/settings
 
 # [optional] if you need to change table name or migration name, please do it now before proceding
 php artisan vendor:publish --provider="Backpack\Settings\SettingsServiceProvider" --tag="config"
