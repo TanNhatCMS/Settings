@@ -62,7 +62,7 @@
 
             <button type="submit" class="btn btn-success">
                 <span class="la la-save" role="presentation" aria-hidden="true"></span> &nbsp;
-                <span data-value="save_and_review">Save and review</span>
+                <span data-value="save_and_review">Lưu và xem lại</span>
             </button>
 		  </form>
 	</div>
