@@ -146,7 +146,7 @@ class SettingCrudController extends CrudController
      *
      * @return array|\Illuminate\Http\RedirectResponse
      */
-    public function updatekey($id)
+    public function updatekey($key)
     {
         $this->crud->hasAccessOrFail('update');
 
@@ -154,7 +154,7 @@ class SettingCrudController extends CrudController
 
         $this->crud->registerFieldEvents();
 
-        Setting::where('id', $id)->update([
+        Setting::where('key', $key)->update([
             'value' => $request->value
         ]);
 
