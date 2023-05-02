@@ -155,7 +155,7 @@ class SettingCrudController extends CrudController
         $this->crud->registerFieldEvents();
 
         Setting::where('key', $key)->update([
-            'value' => $request[$key]
+            'value' => $request["value"]
         ]);
 
         Alert::success(trans('backpack::crud.update_success'))->flash();
